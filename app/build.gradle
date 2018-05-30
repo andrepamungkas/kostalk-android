@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "id.kostalk.app"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            buildConfigField("String", "BASE_URL", "\"http://87f30645.ngrok.io/api/v1/\"")
+            buildConfigField("String", "API_KEY", "\"ABCXYZ123TEST\"")
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "BASE_URL", "\"http://ekos.id/api/v1/\"")
+            buildConfigField("String", "API_KEY", "\"ABCXYZ123TEST\"")
+        }
+    }
+}
+
+dependencies {
+    final SUPPORT_LIBRARY_VERSION = '27.1.0'
+    final RETROFIT_VERSION = '2.3.0'
+    final RETROFIT2_RXJAVA2_ADAPTER_VERSION = '1.0.0'
+    final OKHTTP_VERSION = '3.8.1'
+    final GSON_VERSION = '2.8.2'
+    final GREENDAO_VERSION = '3.2.0'
+    final DAGGER_VERSION = '2.11'
+    final RXJAVA2_VERSION = '2.0.6'
+    final RXANDROID_VERSION = '2.0.1'
+    final BUTTERKNIFE_VERSION = '8.8.1'
+    final TIMBER_VERSION = '4.5.1'
+    final BASE_RECYCLERVIEW_ADAPTER_VERSION = '2.9.35'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // android support
+    implementation "com.android.support:support-v4:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:cardview-v7:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:support-vector-drawable:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:animated-vector-drawable:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support.constraint:constraint-layout:1.0.2"
+
+    // network
+    implementation "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
+    implementation "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
+    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$RETROFIT2_RXJAVA2_ADAPTER_VERSION"
+    implementation "com.squareup.okhttp3:okhttp:$OKHTTP_VERSION"
+    implementation "com.squareup.okhttp3:logging-interceptor:$OKHTTP_VERSION"
+    implementation "com.google.code.gson:gson:$GSON_VERSION"
+    implementation 'com.koushikdutta.ion:ion:2.+'
+
+    // database
+    implementation "org.greenrobot:greendao:$GREENDAO_VERSION"
+
+    // dependency injection
+    implementation "com.google.dagger:dagger:$DAGGER_VERSION"
+    implementation "com.google.dagger:dagger-android-support:$DAGGER_VERSION"
+    implementation 'com.android.support:support-v4:27.1.0'
+    annotationProcessor "com.google.dagger:dagger-compiler:$DAGGER_VERSION"
+//    implementation 'com.google.android.gms:play-services-maps:12.0.0'
+
+    // reactive
+    implementation "io.reactivex.rxjava2:rxjava:$RXJAVA2_VERSION"
+    implementation "io.reactivex.rxjava2:rxandroid:$RXANDROID_VERSION"
+
+    // view
+    implementation "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
+    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:$BASE_RECYCLERVIEW_ADAPTER_VERSION"
+//    implementation 'com.oushangfeng:PinnedSectionItemDecoration:1.2.4'
+
+    // testing
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}

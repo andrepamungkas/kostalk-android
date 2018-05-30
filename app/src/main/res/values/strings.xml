@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Kostalk</string>
+
+    <!-- Common -->
+    <string name="edit">Ubah</string>
+    <string name="delete">Hapus</string>
+    <string name="save">Simpan</string>
+    <string name="login">Login</string>
+    <string name="register">Daftar</string>
+    <string name="name">Nama</string>
+    <string name="cost">Biaya</string>
+    <string name="cost_hint">550000</string>
+    <string name="kos">Kos</string>
+    <string name="interval">Interval pembayaran</string>
+    <string name="statistic">Statistik</string>
+    <string name="history">Riwayat</string>
+    <string name="profile">Profil</string>
+    <string name="in">+</string>
+    <string name="out">-</string>
+    <string name="enter">Masukkan</string>
+    <string name="month">Bulan</string>
+    <string name="num_one">1</string>
+    <string name="building_desc">Tambah dan hapus bangunan</string>
+    <string name="detail">Detil</string>
+
+    <!-- Login, Register, Reset Password -->
+    <string name="password">Password</string>
+    <string name="current_password">Password Sekarang</string>
+    <string name="new_password">Password Baru</string>
+    <string name="already_registered">Sudah punya akun? Login</string>
+    <string name="not_registered">Belum punya akun? Daftar</string>
+    <string name="forgot_password">Lupa password?</string>
+    <string name="request_reset_password">Minta Reset Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="code">Kode</string>
+    <string name="code_desc">Kode dikirimkan ke ponsel yang kamu masukkan sebelumnya.</string>
+    <string name="reset_by_phone_desc">Ekos akan mengirimkan kode ke ponsel yang kamu masukkan ini.</string>
+
+    <!-- Anggota -->
+    <string name="anggota">Anggota</string>
+    <string name="add_member">Tambah Anggota</string>
+    <string name="add">Tambah</string>
+    <string name="start_date">Tanggal mulai</string>
+    <string name="start_date_hint">HH-BB-TTTT</string>
+
+    <!-- Account -->
+    <string name="account">Akun</string>
+    <string name="bank_account">Rekening Bank</string>
+    <string name="bank_account_desc">Rekening digunakan untuk pencairan dana</string>
+    <string name="account_setting">Pengaturan Akun</string>
+    <string name="edit_profile">Edit Profil</string>
+    <string name="balance">Saldo</string>
+
+    <!-- Anggota Profile -->
+    <string name="due_date">Jatuh Tempo</string>
+    <string name="confirmation_cash">Konfirmasi Pembayaran Tunai</string>
+
+    <!-- Withdraw -->
+    <string name="withdraw">Cairkan</string>
+    <string name="withdraw_balance">Cairkan Saldo</string>
+    <string name="bank_account_destination">Rekening Tujuan</string>
+    <string name="withdraw_amount">Jumlah Pencairan</string>
+
+    <!-- Building -->
+    <string name="building">Bangunan</string>
+    <string name="add_building">Tambah Bangunan</string>
+
+    <!-- Phone -->
+    <string name="phone">Ponsel</string>
+    <string name="phone_prefix">+62</string>
+    <string name="phone_hint">08XXXXXXXX</string>
+    <string name="current_phone">Ponsel sekarang</string>
+    <string name="new_phone">Ponsel baru</string>
+
+    <!-- Email -->
+    <string name="email">Email</string>
+    <string name="email_hint">nama@domain.com</string>
+    <string name="current_email">Email sekarang</string>
+    <string name="new_email">Email baru</string>
+
+    <!--App Message-->
+    <string name="api_default_error">Something wrong happened!</string>
+    <string name="some_error">Some Error Occurred</string>
+    <string name="empty_username">Silakan masukkan ponsel</string>
+    <string name="empty_name">Silakan masukkan nama</string>
+    <string name="empty_phone">Silakan masukkan telepon</string>
+    <string name="empty_email">Silakan masukkan email</string>
+    <string name="invalid_email">Silakan masukkan email yang valid</string>
+    <string name="empty_password">Silakan masukkan password</string>
+    <string name="empty_code">Silakan masukkan kode</string>
+    <string name="empty_interval">Silakan masukkan interval</string>
+    <string name="empty_start_date">Silakan masukkan tanggal mulai</string>
+    <string name="failed_login">Kombinasi username dan password salah</string>
+    <string name="failed_request_reset_password">Ponsel tidak terdaftar</string>
+
+    <string-array name="array_month">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
