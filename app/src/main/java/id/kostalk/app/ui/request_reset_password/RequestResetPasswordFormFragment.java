@@ -69,8 +69,6 @@ public class RequestResetPasswordFormFragment extends BaseFragment implements Re
         String kunci = getArguments().getString("kunci");
         String kode = mInputPhone.getText().toString();
         mPresenter.onRequestResetPasswordClick(kunci, kode);
-        startActivity(MainActivity.getStartIntent(getBaseActivity()));
-        getBaseActivity().finish();
     }
 
     @Override
